@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Shopify</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <!-- Landing screen -->
+    <div id="promoBar" class="promo-bar promo-container">
+        <button class="close-btn" onclick="hideMarquee()"><i class="fa-solid fa-xmark"></i></button>
+        <div class="promo-text">
+            <span>---</span>
+            <span>GET 10% OFF ON SELECTED ITEMS</span>
+            <span>---</span>
+            <span>NEW CUSTOMERS SAVE 10% WITH CODE: ENTRY69</span>
+            <span>---</span>
+            <span>FREE SHIPPING AND RETURNS</span>
+            <span>---</span>
+            <span>LIMITED TIME OFFER: FASHION SALE YOU CAN'T RESIST</span>
+
+            <span>---</span>
+            <span>GET 10% OFF ON SELECTED ITEMS</span>
+            <span>---</span>
+            <span>NEW CUSTOMERS SAVE 10% WITH CODE: ENTRY69</span>
+            <span>---</span>
+            <span>FREE SHIPPING AND RETURNS</span>
+            <span>---</span>
+            <span>LIMITED TIME OFFER: FASHION SALE YOU CAN'T RESIST</span>
+        </div>
+    </div>
+
+    <div class="header">
+        <div class="header-upper d-flex align-items-center justify-content-between px-3">
+
+            <div class="locator">
+                <div class="link ms-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22" fill="none">
+                        <path
+                            d="M10.5 18.565C13.5625 15.415 16.625 12.5943 16.625 9.115C16.625 5.6356 13.8827 2.815 10.5 2.815C7.11726 2.815 4.375 5.6356 4.375 9.115C4.375 12.5943 7.4375 15.415 10.5 18.565Z"
+                            stroke="black" stroke-width="0.875" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M10.5 11.565C11.9498 11.565 13.125 10.3898 13.125 8.94C13.125 7.49025 11.9498 6.315 10.5 6.315C9.05021 6.315 7.875 7.49025 7.875 8.94C7.875 10.3898 9.05021 11.565 10.5 11.565Z"
+                            stroke="black" stroke-width="0.875" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    Store Locator
+                </div>
+            </div>
+
+            <div class="contact text-center flex-grow-1">
+                Order by phone: <span>(84) 943 446 000</span> | Shop our Spring Bounty Sale
+            </div>
+            <div class="dropdown-main">
+                <div class="dropdown">
+                    <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        English
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">English</a></li>
+                        <li><a class="dropdown-item" href="#">xxx</a></li>
+                        <li><a class="dropdown-item" href="#">yyy</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        USD
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">USD</a></li>
+                        <li><a class="dropdown-item" href="#">EUR</a></li>
+                        <li><a class="dropdown-item" href="#">GBP</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="images/logo.png" class="" alt="" width=""
+                        height="20"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="nav">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home v</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link mega" href="#" id="navbarDropdown" role="button">
+                                    Shop v
+                                </a>
+                                <div class="mega-box">
+                                    <div class="content">
+                                        <div class="row">
+                                            <header>Collection List Pages</header>
+                                            <ul class="mega-links">
+                                                <li><a href="#">Collection List 01</a></li>
+                                                <li><a href="#">Collection List 02</a></li>
+                                                <li><a href="#">Collection List 03</a></li>
+                                                <li><a href="#">Collection List 04</a></li>
+                                                <li><a href="#">Collection List 05</a></li>
+                                                <li><a href="#">Collection List 06</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="row">
+                                            <header>Shop Layouts</header>
+                                            <ul class="mega-links">
+                                                <li><a href="#">Left Sidebar</a></li>
+                                                <li><a href="#">Right Sidebar</a></li>
+                                                <li><a href="#">Fullwidth</a></li>
+                                                <li><a href="#">Sub collection</a></li>
+                                                <li><a href="#">List View</a></li>
+                                                <li><a href="#">Grid View</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="row">
+                                            <header>Features</header>
+                                            <ul class="mega-links">
+                                                <li><a href="#">Pagination links</a></li>
+                                                <li><a href="#">Pagination loadmore</a></li>
+                                                <li><a href="#">Pagination infinite scrolling</a></li>
+                                                <li><a href="#">Filter sidebar</a></li>
+                                                <li><a href="#">Filter hidden</a></li>
+                                                <li><a href="#">Filter Drop</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="row">
+                                            <header>Product Styles</header>
+                                            <ul class="mega-links p-l">
+                                                <li><a href="#">Product Style 01</a></li>
+                                                <li><a href="#">Product Style 02</a></li>
+                                                <li><a href="#">Product Style 03</a></li>
+                                                <li><a href="#">Product Style 04</a></li>
+                                                <li><a href="#">Product Style 05</a></li>
+                                                <li><a href="#">Product Style 06</a></li>
+                                                <li><a href="#">Product Style 07</a></li>
+                                                <li><a href="#">Product Style 08</a></li>
+                                                <li><a href="#">Product Style 09</a></li>
+                                                <li><a href="#">Product Style 10</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="row">
+                                            <img src="images/megamenu-pic1.webp" class="mega-img" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" id="navbarDropdown" role="button" >
+                                    Products v
+                                </a>
+                                <div class="mega-box">
+                                    <div class="content">
+                                        <div class="row">
+                                            <header>Product Pages</header>
+                                            <ul class="mega-links p-l1">
+                                                <li><a href="#">Default</a></li>
+                                                <li><a href="#">Product Grid</a></li>
+                                                <li><a href="#">Gallery</a></li>
+                                                <li><a href="#">Left Thumb</a></li>
+                                                <li><a href="#">Right Thumb</a></li>
+                                                <li><a href="#">Grid View</a></li>
+                                                <li><a href="#">Slider</a></li>
+                                                <li><a href="#">Left Slider</a></li>
+                                                <li><a href="#">Right Slider</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="row">
+                                            <header>Product Features</header>
+                                            <ul class="mega-links p-l1">
+                                                <li><a href="#">Sticky Aa to Cart</a></li>
+                                                <li><a href="#">Notify me (Outof stock)</a></li>
+                                                <li><a href="#">Pre-order</a></li>
+                                                <li><a href="#">Product Countdown</a></li>
+                                                <li><a href="#">Product Variable Color</a></li>
+                                                <li><a href="#">Product Variable Color and Checkbox</a></li>
+                                                <li><a href="#">Product Variable Dropdown</a></li>
+                                                <li><a href="#">Product Variable color and Dropdown</a></li>
+                                                <li><a href="#">Product Variable Check Box</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="row">
+                                            <header>Features</header>
+                                            <ul class="mega-links p-l2">
+                                                <li><a href="#">Inner Zoom</a></li>
+                                                <li><a href="#">Lens Zoom</a></li>
+                                                <li><a href="#">Out Zoom</a></li>
+                                                <li><a href="#">Product Video</a></li>
+                                                <li><a href="#">Product 360</a></li>
+                                                <li><a href="#">3D, AR Models</a></li>
+                                                <li><a href="#">Size Chart</a></li>
+                                                <li><a href="#">Frequently Bought Together</a></li>
+                                                <li><a href="#">Delivery information</a></li>
+                                                <li><a href="#">Product Pickup</a></li>
+                                                <li><a href="#">Ask Question</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="row">
+                                            <img src="images/megamenu-pic2.webp" class="mega-img2" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Pages v
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Faqs Page</a></li>
+                                    <li><a class="dropdown-item" href="#">Look Book</a></li>
+                                    <li><a class="dropdown-item" href="#">Track Order</a></li>
+                                    <li><a class="dropdown-item" href="#">Support 24/7</a></li>
+                                    <li><a class="dropdown-item" href="#">Photo Gallery</a></li>
+                                    <li><a class="dropdown-item" href="#">About us</a></li>
+                                    <li><a class="dropdown-item" href="#">Portfolio 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Portfolio 2</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Blog v
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Blog Grid 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Blog Grid 3</a></li>
+                                    <li><a class="dropdown-item" href="#">Blog Grid 4</a></li>
+                                    <li><a class="dropdown-item" href="#">Blog List</a></li>
+                                    <li><a class="dropdown-item" href="#">Blog Full Width</a></li>
+                                    <li><a class="dropdown-item" href="#">Blog Post Default</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="d-flex align-items-center icon-group">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <path
+                                d="M15.7955 16.0011L21 21.19M18 10.69C18 14.8321 14.6421 18.19 10.5 18.19C6.35786 18.19 3 14.8321 3 10.69C3 6.54786 6.35786 3.19 10.5 3.19C14.6421 3.19 18 6.54786 18 10.69Z"
+                                stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
+                            <path
+                                d="M5 21.19C5 17.324 8.13401 14.19 12 14.19C15.866 14.19 19 17.324 19 21.19M16 7.19C16 9.39914 14.2091 11.19 12 11.19C9.79086 11.19 8 9.39914 8 7.19C8 4.98086 9.79086 3.19 12 3.19C14.2091 3.19 16 4.98086 16 7.19Z"
+                                stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                            <path
+                                d="M9.90736 16.4434L9.80926 16.5415L9.70136 16.4434C5.04196 12.2156 1.96185 9.41997 1.96185 6.5851C1.96185 4.62324 3.43324 3.15185 5.3951 3.15185C6.90572 3.15185 8.37711 4.13278 8.897 5.46684H10.7215C11.2414 4.13278 12.7128 3.15185 14.2234 3.15185C16.1853 3.15185 17.6567 4.62324 17.6567 6.5851C17.6567 9.41997 14.5766 12.2156 9.90736 16.4434ZM14.2234 1.19C12.5166 1.19 10.8785 1.98455 9.80926 3.23033C8.74005 1.98455 7.10191 1.19 5.3951 1.19C2.37384 1.19 0 3.55403 0 6.5851C0 10.2832 3.33515 13.3143 8.38692 17.8952L9.80926 19.19L11.2316 17.8952C16.2834 13.3143 19.6185 10.2832 19.6185 6.5851C19.6185 3.55403 17.2447 1.19 14.2234 1.19Z"
+                                fill="black" />
+                        </svg>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
+                            <path
+                                d="M6.29977 5.19H21L19 12.19H7.37671M20 16.19H8L6 3.19H3M9 20.19C9 20.7423 8.55228 21.19 8 21.19C7.44772 21.19 7 20.7423 7 20.19C7 19.6377 7.44772 19.19 8 19.19C8.55228 19.19 9 19.6377 9 20.19ZM20 20.19C20 20.7423 19.5523 21.19 19 21.19C18.4477 21.19 18 20.7423 18 20.19C18 19.6377 18.4477 19.19 19 19.19C19.5523 19.19 20 19.6377 20 20.19Z"
+                                stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/img1.webp" class="d-block w-100" alt="...">
+                    <div class="carousel-caption cc1 d-none d-md-block">
+                        <h5>Oversized</h5>
+                        <h5>Knitted Jumpers</h5>
+                        <p>A fusion of classic and morden fashion styles</p>
+                        <button class="btn">Shop Now</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/img3.webp" class="d-block w-100" alt="...">
+                    <div class="carousel-caption cc2 d-none d-md-block">
+                        <h5>Textured-Knit</h5>
+                        <h5>Cardigan</h5>
+                        <p>Outfits To Wear For Every Degree Of Weather</p>
+                        <button class="btn">Shop Now</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/img2.webp" class="d-block w-100" alt="...">
+                    <div class="carousel-caption cc1 d-none d-md-block">
+                        <h5>Felt Hats</h5>
+                        <h5>For Women</h5>
+                        <p>Outfits To Wear For Every Degree Of Weather</p>
+                        <button class="btn">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Page2 -->
+
+    <div class="container my-5">
+        <div class="d-flex align-items-center justify-content-between mb-3">
+            <h2 class="mb-0 heading">Shop By Categories</h2>
+            <div class="d-flex align-items-center">
+                <button class="scroll-btn" onclick="scrollLeft()">&#x276E;</button>
+                <button class="scroll-btn" onclick="scrollRight()">&#x276F;</button>
+            </div>
+        </div>
+
+        <div class="scroll-container" id="categoryScroll">
+
+            <div class="category-card">
+                <img src="images/jacket.png" alt="Jacket Coat">
+                <div class="d-flex align-items-start justify-content-between mt-3 box">
+                    <div class="text-start ps-4">
+                        <h5 class="mb-1">Jacket Coat</h5>
+                        <p class="mb-0">10 items</p>
+                    </div>
+                    <a href="#" class="icon-btn me-4">↗</a>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <img src="images/dresses.webp" alt="Dresses">
+                <div class="d-flex align-items-center justify-content-between mt-3">
+                    <div class="text-start ps-4">
+                        <h5 class="mb-1">Dresses</h5>
+                        <p class="mb-0">5 items</p>
+                    </div>
+                    <a href="#" class="icon-btn me-4">↗</a>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <img src="images/Top.png" alt="Top">
+                <div class="d-flex align-items-center justify-content-between mt-3">
+                    <div class="text-start ps-4">
+                        <h5 class="mb-1">Top</h5>
+                        <p class="mb-0">11 items</p>
+                    </div>
+                    <a href="#" class="icon-btn me-4">↗</a>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <img src="images/Handbags.webp" alt="Handbags">
+                <div class="d-flex align-items-center justify-content-between mt-3">
+                    <div class="text-start ps-4">
+                        <h5 class="mb-1">Handbags</h5>
+                        <p class="mb-0">8 items</p>
+                    </div>
+                    <a href="#" class="icon-btn me-4">↗</a>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <img src="images/Backpack.webp" alt="Backpack">
+                <div class="d-flex align-items-center justify-content-between mt-3">
+                    <div class="text-start ps-4">
+                        <h5 class="mb-1">Backpack</h5>
+                        <p class="mb-0">5 items</p>
+                    </div>
+                    <a href="#" class="icon-btn me-4">↗</a>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <img src="images/Accessories.webp" alt="Accessories">
+                <div class="d-flex align-items-center justify-content-between mt-3">
+                    <div class="text-start ps-4">
+                        <h5 class="mb-1">Accessories</h5>
+                        <p class="mb-0">7 items</p>
+                    </div>
+                    <a href="#" class="icon-btn me-4">↗</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <hr class="border border-0.5 opacity-50 mt-5" style="border-color: #fffdfd04;">
+
+    <!-- Page3 -->
+
+    <div class="container-3">
+        <div class="row">
+            <div class="col-md-6 order-1">
+                <div class="left position-relative overflow-hidden">
+                    <img src="images/thrid-img.jpg" alt="img" class="img-fluid">
+                    <div class="overlay-content">
+                        <h5 class="text-white">New arrivals</h5>
+                        <h3 class="text-white">Winter Collection For Women</h3>
+                        <button class="btn">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 order-2">
+                <div class="left position-relative overflow-hidden">
+                    <div class="right">
+                        <h5>Favorite Products</h5>
+                        <h3>Trending Now</h3>
+                        <div class="container-4">
+                            <div class="image-label">Sale</div>
+                            <div class="outer-class">
+                                <div class="inner-class"><i class="fa-regular fa-heart"></i></div>
+                                <div class="inner-class"><i class="fa-solid fa-layer-group"></i></div>
+                                <div class="inner-class"><i class="fa-solid fa-eye"></i></div>
+                            </div>
+                            <div class="image-wrapper">
+                                <img src="images/Cotton_T_shirt1.webp" alt="cotton-t-shirt" class="main-img">
+                                <img src="images/Cotton_T_shirt.webp" alt="cotton-t-shirt" class="hover-img">
+                            </div>
+                            <div class="detail">
+                                <p class="p1">Cotton T-Shirt</p>
+                                <p class="p2"><del>$100.00</del><span>$49.00</span></p>
+                                <div class="button-group">
+                                    <div class="outer-circle">
+                                        <div class="inner-circle" style="background-color: #0d6bef;"></div>
+                                    </div>
+                                    <div class="outer-circle">
+                                        <div class="inner-circle" style="background-color: #c55c01c2;"></div>
+                                    </div>
+                                    <div class="outer-circle">
+                                        <div class="inner-circle" style="background-color: #4c4c4f;"></div>
+                                    </div>
+                                </div>
+                                <p class="p4">
+                                    <span class="size">S</span>
+                                    <span class="size">M</span>
+                                    <span class="size">L</span>
+                                </p>
+                            </div>
+                            <button class="select-button"><i class="fa-solid fa-cart-shopping"></i>Select
+                                Options</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Page4-->
+
+    <div class="new-arrivals">
+        <h3>New Arrivals</h3>
+        <div class="product-nav">
+            <button class="active">All Products</button>
+            <button>Blazers</button>
+            <button>Handbags</button>
+            <button>Shoes</button>
+            <button>T-shirts</button>
+        </div>
+        <div class="product-wrapper">
+            <button class="arrow-btn left-btn"><i class="fa-solid fa-chevron-left"></i></button>
+            <div class="product-grid">
+                <div class="container-4">
+                    <div class="image-label">Sale</div>
+                    <div class="outer-class">
+                        <div class="inner-class"><i class="fa-regular fa-heart"></i></div>
+                        <div class="inner-class"><i class="fa-solid fa-layer-group"></i></div>
+                        <div class="inner-class"><i class="fa-solid fa-eye"></i></div>
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="images/Denim_Utility_Jacket.webp" alt="cotton-t-shirt" class="main-img">
+                        <img src="images/Denim_Utility_Jacket1.webp" alt="cotton-t-shirt" class="hover-img">
+                    </div>
+                    <div class="detail">
+                        <p class="p1">Denim Utility Jacket</p>
+                        <p class="p2"><del>$80.00</del><span>$16.00</span></p>
+                        <div class="button-group">
+                            <div class="outer-circle">
+                                <div class="inner-circle" style="background-color: #07469e;"></div>
+                            </div>
+                            <div class="outer-circle">
+                                <div class="inner-circle" style="background-color: #4c4c4f8d;"></div>
+                            </div>
+                            <div class="outer-circle">
+                                <div class="inner-circle" style="background-color: #f4ec08;"></div>
+                            </div>
+                        </div>
+                        <p class="p4">
+                            <span class="size">S</span>
+                            <span class="size">M</span>
+                            <span class="size">L</span>
+                        </p>
+                    </div>
+                    <button class="select-button"><i class="fa-solid fa-cart-shopping"></i>Select
+                        Options</button>
+                </div>
+                <div class="container-4">
+                    <div class="image-label">Sale</div>
+                    <div class="outer-class">
+                        <div class="inner-class"><i class="fa-regular fa-heart"></i></div>
+                        <div class="inner-class"><i class="fa-solid fa-layer-group"></i></div>
+                        <div class="inner-class"><i class="fa-solid fa-eye"></i></div>
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="images/Loose_Fit_Wool_Blend_Coat.jpg" alt="cotton-t-shirt" class="main-img">
+                        <img src="images/Loose_Fit_Wool_Blend_Coat1.jpg" alt="cotton-t-shirt" class="hover-img">
+                    </div>
+                    <div class="detail">
+                        <p class="p1">Loose Fit Wool Blend Coat</p>
+                        <p class="p2"><del>$100.00</del><span>$30.00</span></p>
+                    </div>
+                    <button class="select-button"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+                </div>
+                <div class="container-4">
+                    <div class="image-label">Sale</div>
+                    <div class="outer-class">
+                        <div class="inner-class"><i class="fa-regular fa-heart"></i></div>
+                        <div class="inner-class"><i class="fa-solid fa-layer-group"></i></div>
+                        <div class="inner-class"><i class="fa-solid fa-eye"></i></div>
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="images/Rib_Knit_Cardigan.webp" alt="cotton-t-shirt" class="main-img">
+                        <img src="images/Rib_Knit_Cardigan1.webp" alt="cotton-t-shirt" class="hover-img">
+                    </div>
+                    <div class="detail">
+                        <p class="p1">Rib Knit Cardigan</p>
+                        <p class="p2"><del>$56.00</del><span>$45.00</span></p>
+                        <div class="button-group">
+                            <div class="outer-circle">
+                                <div class="inner-circle" style="background-color: #090909;"></div>
+                            </div>
+                            <div class="outer-circle">
+                                <div class="inner-circle" style="background-color: #fbf9f9;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="select-button"><i class="fa-solid fa-cart-shopping"></i>Select
+                        Options</button>
+                </div>
+                <div class="container-4">
+                    <div class="image-label">Sale</div>
+                    <div class="outer-class">
+                        <div class="inner-class"><i class="fa-regular fa-heart"></i></div>
+                        <div class="inner-class"><i class="fa-solid fa-layer-group"></i></div>
+                        <div class="inner-class"><i class="fa-solid fa-eye"></i></div>
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="images/Reversible_Bomber_Jacket.webp" alt="cotton-t-shirt" class="main-img">
+                        <img src="images/Reversible_Bomber_Jacket1.webp" alt="cotton-t-shirt" class="hover-img">
+                    </div>
+                    <div class="detail">
+                        <p class="p1">Satin Pversized Double Breast Blazer</p>
+                        <p class="p2"><del>$80.00</del><span>$60.00</span></p>
+                        <div class="button-group">
+                            <div class="outer-circle">
+                                <div class="inner-circle" style="background-color: #40ff0b;"></div>
+                            </div>
+                            <div class="outer-circle">
+                                <div class="inner-circle" style="background-color: #ff03fbc2;"></div>
+                            </div>
+                        </div>
+                        <p class="p4">
+                            <span class="size">S</span>
+                            <span class="size">M</span>
+                            <span class="size">L</span>
+                            <span class="size">XL</span>
+                        </p>
+                    </div>
+                    <button class="select-button"><i class="fa-solid fa-cart-shopping"></i>Select
+                        Options</button>
+                </div>
+                <div class="container-4">
+                    <div class="image-label">Sale</div>
+                    <div class="outer-class">
+                        <div class="inner-class"><i class="fa-regular fa-heart"></i></div>
+                        <div class="inner-class"><i class="fa-solid fa-layer-group"></i></div>
+                        <div class="inner-class"><i class="fa-solid fa-eye"></i></div>
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="images/Short_Pea_Coat.webp" alt="cotton-t-shirt" class="main-img">
+                        <img src="images/Short_Pea_Coat1.webp" alt="cotton-t-shirt" class="hover-img">
+                    </div>
+                    <div class="detail">
+                        <p class="p1">Short Pea Coat</p>
+                        <p class="p2">$15.00</p>
+                        <div class="button-group">
+                            <div class="outer-circle">
+                                <div class="inner-circle" style="background-color: #000000;"></div>
+                            </div>
+                        </div>
+                        <p class="p4">
+                            <span class="size">S</span>
+                            <span class="size">M</span>
+                            <span class="size">L</span>
+                            <span class="size">XS</span>
+                        </p>
+                    </div>
+                    <button class="select-button"><i class="fa-solid fa-cart-shopping"></i>Select
+                        Options</button>
+                </div>
+                <div class="container-4">
+                    <div class="image-label">Sale</div>
+                    <div class="outer-class">
+                        <div class="inner-class"><i class="fa-regular fa-heart"></i></div>
+                        <div class="inner-class"><i class="fa-solid fa-layer-group"></i></div>
+                        <div class="inner-class"><i class="fa-solid fa-eye"></i></div>
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="images/Short_Trench_Coat.webp" alt="cotton-t-shirt" class="main-img">
+                        <img src="images/Short_Trench_Coat1.webp" alt="cotton-t-shirt" class="hover-img">
+                    </div>
+                    <div class="detail">
+                        <p class="p1">Short Trench Coat</p>
+                        <p class="p2"><del>$40.00</del><span>$33.00</span></p>
+                        <p class="p4">
+                            <span class="size">S</span>
+                            <span class="size">M</span>
+                            <span class="size">L</span>
+                            <span class="size">XL</span>
+                        </p>
+                    </div>
+                    <button class="select-button"><i class="fa-solid fa-cart-shopping"></i>Select
+                        Options</button>
+                </div>
+            </div>
+            <button class="arrow-btn right-btn"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+    </div>
+
+    <!--OfferBar-->
+
+    <div class="offerbar">
+        <div class="offer-text">
+            <h3>Special Offer</h3>
+            <h6>20% OFF Summer Clothing Items.. Limited Time Only.</h6>
+        </div>
+        <div class="counter">
+
+        </div>
+        <div class="Shop-button">Shop The Sale</div>
+    </div>
+
+    <!--collection-->
+
+    <div class="container py-5" id="container-6">
+        <div class="row align-items-center g-5">
+
+            <div class="col-md-6 collection">
+                <p class="text-muted small p-collection">Our Collections</p>
+                <h1 class="display-5">The Blazers You'll Use Again And Again.</h1>
+                <p class="text-secondary">Here is your chance to upgrade your wardrobe with a variation of styles and
+                    fits that are both.</p>
+                <button class="btn btn1 px-4">Shop All Products</button>
+
+                <div class="pt-4">
+                    <span class="dot"></span>
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="image-stack">
+                    <img src="images/collect.webp" alt="T-Shirt" class="img-fluid shadow img1">
+                    <img src="images/collect1.webp" alt="Model" class="img-fluid shadow img2">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--Best Selling Products-->
+
+    <div class="container-7">
+        <h3>Best Selling Products</h3>
+
+        <div class="container-7-product-grid">
+            <div class="container-4">
+                <div class="image-label">Sale</div>
+                <div class="outer-class">
+                    <div class="inner-class"><i class="fa-regular fa-heart"></i></div>
+                    <div class="inner-class"><i class="fa-solid fa-layer-group"></i></div>
+                    <div class="inner-class"><i class="fa-solid fa-eye"></i></div>
+                </div>
+                <div class="image-wrapper">
+                    <img src="images/Cotton_T_shirt1.webp" alt="cotton-t-shirt" class="main-img">
+                    <img src="images/Cotton_T_shirt.webp" alt="cotton-t-shirt" class="hover-img">
+                </div>
+                <div class="detail">
+                    <p class="p1">Cotton T-Shirt</p>
+                    <p class="p2"><del>$100.00</del><span>$49.00</span></p>
+                    <div class="button-group">
+                        <div class="outer-circle">
+                            <div class="inner-circle" style="background-color: #0d6bef;"></div>
+                        </div>
+                        <div class="outer-circle">
+                            <div class="inner-circle" style="background-color: #c55c01c2;"></div>
+                        </div>
+                        <div class="outer-circle">
+                            <div class="inner-circle" style="background-color: #4c4c4f;"></div>
+                        </div>
+                    </div>
+                    <p class="p4">
+                        <span class="size">S</span>
+                        <span class="size">M</span>
+                        <span class="size">L</span>
+                    </p>
+                </div>
+                <button class="select-button"><i class="fa-solid fa-cart-shopping"></i>Select
+                    Options</button>
+            </div>
+            <div class="container-4">
+                <div class="image-label">Sale</div>
+                <div class="outer-class">
+                    <div class="inner-class"><i class="fa-regular fa-heart"></i></div>
+                    <div class="inner-class"><i class="fa-solid fa-layer-group"></i></div>
+                    <div class="inner-class"><i class="fa-solid fa-eye"></i></div>
+                </div>
+                <div class="image-wrapper">
+                    <img src="images/Regular_Fit_Denim_overshirt.webp" alt="cotton-t-shirt" class="main-img">
+                    <img src="images/Regular_Fit_Denim_overshirt_1.webp" alt="cotton-t-shirt" class="hover-img">
+                </div>
+                <div class="detail">
+                    <p class="p1">Retro Oval Sunglasses for Women</p>
+                    <p class="p2">$90.00</p>
+                </div>
+                <button class="select-button"><i class="fa-solid fa-cart-shopping"></i>Select
+                    Options</button>
+            </div>
+            <div class="container-4">
+                <div class="image-label">Sale</div>
+                <div class="outer-class">
+                    <div class="inner-class"><i class="fa-regular fa-heart"></i></div>
+                    <div class="inner-class"><i class="fa-solid fa-layer-group"></i></div>
+                    <div class="inner-class"><i class="fa-solid fa-eye"></i></div>
+                </div>
+                <div class="image-wrapper">
+                    <img src="images/Slim_Fit_T_shirt.webp" alt="cotton-t-shirt" class="main-img">
+                    <img src="images/Slim_Fit_T_shirt_1.webp" alt="cotton-t-shirt" class="hover-img">
+                </div>
+                <div class="detail">
+                    <p class="p1">Soft Silk Cotton Shirt</p>
+                    <p class="p2">$46.00</p>
+                </div>
+                <div class="button-group">
+                    <div class="outer-circle">
+                        <div class="inner-circle" style="background-color: #090909;"></div>
+                    </div>
+                    <div class="outer-circle">
+                        <div class="inner-circle" style="background-color: #fbf9f9;"></div>
+                    </div>
+                </div>
+                <button class="select-button"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+            </div>
+            <div class="container-4">
+                <div class="image-label">Sale</div>
+                <div class="outer-class">
+                    <div class="inner-class"><i class="fa-regular fa-heart"></i></div>
+                    <div class="inner-class"><i class="fa-solid fa-layer-group"></i></div>
+                    <div class="inner-class"><i class="fa-solid fa-eye"></i></div>
+                </div>
+                <div class="image-wrapper">
+                    <img src="images/Layered_Mesh_Top.webp" alt="cotton-t-shirt" class="main-img">
+                    <img src="images/Layered_Mesh_Top_1.webp" alt="cotton-t-shirt" class="hover-img">
+                </div>
+                <div class="detail">
+                    <p class="p1">Layered Mesh Top</p>
+                    <p class="p2"><del>$132.00</del><span>$111.00</span></p>
+                </div>
+                <button class="select-button"><i class="fa-solid fa-cart-shopping"></i>Select
+                    Options</button>
+            </div>
+            <div class="container-4">
+                <div class="image-label">Sale</div>
+                <div class="outer-class">
+                    <div class="inner-class"><i class="fa-regular fa-heart"></i></div>
+                    <div class="inner-class"><i class="fa-solid fa-layer-group"></i></div>
+                    <div class="inner-class"><i class="fa-solid fa-eye"></i></div>
+                </div>
+                <div class="image-wrapper">
+                    <img src="images/Crew_Neck_Sweatshirt.webp" alt="cotton-t-shirt" class="main-img">
+                    <img src="images/Crew_Neck_Sweatshirt_1.webp" alt="cotton-t-shirt" class="hover-img">
+                </div>
+                <div class="detail">
+                    <p class="p1">Crew Neck Sweatshirt</p>
+                    <p class="p2">$15.00</p>
+                    <div class="button-group">
+                        <div class="outer-circle">
+                            <div class="inner-circle" style="background-color: #4b0cf7;"></div>
+                        </div>
+                        <div class="outer-circle">
+                            <div class="inner-circle" style="background-color: #000000c2;"></div>
+                        </div>
+                    </div>
+                    <p class="p4">
+                        <span class="size">S</span>
+                        <span class="size">M</span>
+                        <span class="size">L</span>
+                        <span class="size">XL</span>
+                    </p>
+                </div>
+                <button class="select-button"><i class="fa-solid fa-cart-shopping"></i>Select
+                    Options</button>
+            </div>
+            <div class="container-4">
+                <div class="image-label">Sale</div>
+                <div class="outer-class">
+                    <div class="inner-class"><i class="fa-regular fa-heart"></i></div>
+                    <div class="inner-class"><i class="fa-solid fa-layer-group"></i></div>
+                    <div class="inner-class"><i class="fa-solid fa-eye"></i></div>
+                </div>
+                <div class="image-wrapper">
+                    <img src="images/Ribbed_Tank_Top.webp" alt="cotton-t-shirt" class="main-img">
+                    <img src="images/Ribbed_Tank_Top_1.webp" alt="cotton-t-shirt" class="hover-img">
+                </div>
+                <div class="detail">
+                    <p class="p1">Ribbed Tank Top</p>
+                    <p class="p2">$10.00</p>
+                    <div class="button-group">
+                        <div class="outer-circle">
+                            <div class="inner-circle" style="background-color: #4d6af7;"></div>
+                        </div>
+                        <div class="outer-circle">
+                            <div class="inner-circle" style="background-color: #ecc899;"></div>
+                        </div>
+                    </div>
+                    <p class="p4">
+                        <span class="size">S</span>
+                        <span class="size">M</span>
+                        <span class="size">L</span>
+                        <span class="size">XS</span>
+                    </p>
+                </div>
+                <button class="select-button"><i class="fa-solid fa-cart-shopping"></i>Select
+                    Options</button>
+            </div>
+            <div class="container-4">
+                <div class="image-label">Sale</div>
+                <div class="outer-class">
+                    <div class="inner-class"><i class="fa-regular fa-heart"></i></div>
+                    <div class="inner-class"><i class="fa-solid fa-layer-group"></i></div>
+                    <div class="inner-class"><i class="fa-solid fa-eye"></i></div>
+                </div>
+                <div class="image-wrapper">
+                    <img src="images/Fine_Knit_Turtleneck_Top.webp" alt="cotton-t-shirt" class="main-img">
+                    <img src="images/Fine_Knit_Turtleneck_Top_1.webp" alt="cotton-t-shirt" class="hover-img">
+                </div>
+                <div class="detail">
+                    <p class="p1">Fine Knit Turtleneck Top</p>
+                    <p class="p2"><del>$90.00</del><span>$80.00</span></p>
+                    <div class="button-group">
+                        <div class="outer-circle">
+                            <div class="inner-circle" style="background-color: #020207;"></div>
+                        </div>
+                        <div class="outer-circle">
+                            <div class="inner-circle" style="background-color: #d40101;"></div>
+                        </div>
+                    </div>
+                    <p class="p4">
+                        <span class="size">S</span>
+                        <span class="size">M</span>
+                        <span class="size">L</span>
+                        <span class="size">XL</span>
+                    </p>
+                </div>
+                <button class="select-button"><i class="fa-solid fa-cart-shopping"></i>Select
+                    Options</button>
+            </div>
+            <div class="container-4">
+                <div class="image-label">Sale</div>
+                <div class="outer-class">
+                    <div class="inner-class"><i class="fa-regular fa-heart"></i></div>
+                    <div class="inner-class"><i class="fa-solid fa-layer-group"></i></div>
+                    <div class="inner-class"><i class="fa-solid fa-eye"></i></div>
+                </div>
+                <div class="image-wrapper">
+                    <img src="images/Crop_Tank_Top.webp" alt="cotton-t-shirt" class="main-img">
+                    <img src="images/Crop_Tank_Top_1.webp" alt="cotton-t-shirt" class="hover-img">
+                </div>
+                <div class="detail">
+                    <p class="p1">Crop Tank Top</p>
+                    <p class="p2"><del>$199.00</del><span>$27.00</span></p>
+                    <p class="p4">
+                        <span class="size">S</span>
+                        <span class="size">M</span>
+                        <span class="size">L</span>
+                        <span class="size">XL</span>
+                    </p>
+                </div>
+                <button class="select-button"><i class="fa-solid fa-cart-shopping"></i>Select
+                    Options</button>
+            </div>
+        </div>
+
+    </div>
+    <button class="load">Load More</button>
+
+    <!--look-book-->
+    <div class="look-book">
+        <button class="arrow-btn left-btn"><i class="fa-solid fa-chevron-left"></i></button>
+        <div class="scroll-container" id="categoryScroll">
+            <img src="images/look-book1.webp" alt="look-book">
+            <img src="images/look-book2.webp" alt="look-book">
+            <img src="images/look-book3.webp" alt="look-book">
+        </div>
+        <button class="arrow-btn right-btn"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+
+    <!--brand line-->
+    <div class="brandline-wrapper">
+        <button class="arrow-btn left-btn"><i class="fa-solid fa-chevron-left"></i></button>
+        <div class="brandline" id="brandline">
+            <img src="images/Fashion_4.webp" alt="">
+            <img src="images/Fashion_5.webp" alt="">
+            <img src="images/Fashion_6.avif" alt="">
+            <img src="images/Fashion_7_c0fab37c-8962-43c3-a0c3-7c6c0a2ca6b4.avif" alt="">
+            <img src="images/Fashion_1.webp" alt="">
+            <img src="images/Fashion_3.webp" alt="">
+        </div>
+        <button class="arrow-btn right-btn"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+
+    <!--testimonial-slider-->
+    <div class="container testimonial-slider">
+        <div class="row w-100">
+            <div class="col-md-6">
+                <div class="image-split-wrapper">
+                    <img src="images/Video1.jpg" alt="testimonial image">
+                    <div class="image-split-overlay"></div>
+                    <button class="play-button">
+                        <i class="fas fa-play"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-6 testimonial-content">
+                <div class="testimonial-stars">
+                    ★★★★★
+                </div>
+                <div class="testimonial-text">
+                    “This is a great design and i hope that we will create a website with good signature.”
+                </div>
+                <div class="testimonial-name">
+                    Johnnie Walker
+                </div>
+                <div class="testimonial-location">
+                    California – USA
+                </div>
+                <div class="slider-nav">
+                    <button><i class="fas fa-chevron-left"></i></button>
+                    <button><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Promobar 2-->
+    <div id="promoBar2" class="promo-bar2 promo-container">
+        <div class="promo-text2">
+            <span>o</span>
+            <span>Get 10% off on selected items</span>
+            <span>o</span>
+            <span>Limited Time Offer: Fashion Sale You Can’t Resist</span>
+            <span>o</span>
+            <span>Free Shipping and Returns</span>
+            <span>o</span>
+            <span>Get 10% off on selected items</span>
+            <span>o</span>
+            <span>Limited Time Offer: Fashion Sale You Can’t Resist</span>
+            <span>o</span>
+            <span>Free Shipping and Returns</span>
+
+            <span>o</span>
+            <span>Get 10% off on selected items</span>
+            <span>o</span>
+            <span>Limited Time Offer: Fashion Sale You Can’t Resist</span>
+            <span>o</span>
+            <span>Free Shipping and Returns</span>
+            <span>o</span>
+            <span>Get 10% off on selected items</span>
+            <span>o</span>
+            <span>Limited Time Offer: Fashion Sale You Can’t Resist</span>
+            <span>o</span>
+            <span>Free Shipping and Returns</span>
+        </div>
+    </div>
+
+    <!--Stories-->
+    <div class="stories">
+        <h3>Our Stories</h3>
+        <a href="#">See All Posts</a>
+    </div>
+    <div class="image-container">
+        <div class="image-item">
+            <img src="images/Blog1.webp" alt="Image 1">
+            <div class="image-details">
+                <div class="in-line">
+                    <div class="news">NEWS</div>
+                    <div class="author">by <span>Chung Nguyen</span></div>
+                </div>
+                <div class="description">Bibendum iaculis quis sito amet eros</div>
+            </div>
+        </div>
+        <div class="image-item">
+            <img src="images/Blog2.webp" alt="Image 2">
+            <div class="image-details">
+                <div class="in-line">
+                    <div class="news">NEWS</div>
+                    <div class="author">by <span>Chung Nguyen</span></div>
+                </div>
+                <div class="description">Divamus sit amet purus justo</div>
+            </div>
+        </div>
+        <div class="image-item">
+            <img src="images/Blog3.webp" alt="Image 3">
+            <div class="image-details">
+                <div class="in-line">
+                    <div class="news">NEWS</div>
+                    <div class="author">by Chung Nguyen</div>
+                </div>
+                <div class="description">Proin molestie egestas orci ac susci...</div>
+            </div>
+        </div>
+    </div>
+    <hr class="border border-0.5 opacity-50 mt-5" style="border-color: #fffdfd04;">
+
+    <!--footer1-->
+
+    <div class="features-container">
+        <div class="feature-box">
+            <i class="fas fa-box fa-2x mb-2"></i>
+            <div class="f-detail">
+                <h6>Free Shipping</h6>
+                <p class="small text-muted">Free Shipping for orders over $99</p>
+            </div>
+        </div>
+        <div class="feature-box">
+            <i class="fas fa-dollar-sign fa-2x mb-2"></i>
+            <div class="f-detail">
+                <h6>Money Guarantee</h6>
+                <p class="small text-muted">Within 30 days for an exchange</p>
+            </div>
+        </div>
+        <div class="feature-box">
+            <i class="fas fa-headset fa-2x mb-2"></i>
+            <div class="f-detail">
+                <h6>Online Support</h6>
+                <p class="small text-muted">24 hours a day, 7 days a week</p>
+            </div>
+        </div>
+        <div class="feature-box">
+            <i class="fas fa-file-invoice-dollar fa-2x mb-2"></i>
+            <div class="f-detail">
+                <h6>Flexible Payment</h6>
+                <p class="small text-muted">Pay with Multiple Credit Cards</p>
+            </div>
+        </div>
+    </div>
+
+    <!--footer2-->
+
+    <footer class="footer2">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-3 mb-4 f2">
+                    <img src="images/logo.png" alt="">
+                    <p class="p1">5611 Wellington Road, Suite 115, Gainesville</p>
+                    <p class="p2">(84) 943 446 000</p>
+                    <p class="small"><a href="mailto:entry@support.com">entry@support.com</a></p>
+                </div>
+
+                <div class="col-md-2 mb-4 f22">
+                    <h6 class="fw-bold">Information</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Delivery Time</a></li>
+                        <li><a href="#">Our Blog</a></li>
+                        <li><a href="#">Delivery Return</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-2 mb-4 f22">
+                    <h6 class="fw-bold">Customer Services</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Lookbook</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Track Order</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-2 mb-4 f22">
+                    <h6 class="fw-bold">Contact Us</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Store Location</a></li>
+                        <li><a href="#">Support 24/7</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <h6 class="fw-bold">Join Our Newsletter And Get $50 Discount For Your First Order</h6>
+                    <div class="input-group mb-3 mt-3">
+                        <input type="text" class="form-control" placeholder="Sign Up Newsletter">
+                        <button class="btn btn-dark" type="button">
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                    <div class=" f4 d-flex gap-3">
+                        <a href="#" class="text-dark"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-dark"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-dark"><i class="fab fa-x-twitter fa-lg"></i></a>
+                        <a href="#" class="text-dark"><i class="fab fa-tiktok fa-lg"></i></a>
+                        <a href="#" class="text-dark"><i class="fab fa-youtube fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--footer3-->
+    <div class="last-footer">
+        <hr class="border border-0.5 opacity-50 mt-1" style="border-color: #fffdfd04;">
+        <div class="footer3">Ss Entry <span>© 2025 Demo Store. All Rights Reserved. Designed by</span> Smartaddons</div>
+        <div class="f-img">
+            <img src="images/f1.avif" alt="">
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
